@@ -4,26 +4,71 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config={
+        theme: {
+          fontFamily: {
+            'sans': ['ui-sans-serif', 'system-ui'],
+            'serif': ['ui-serif', 'Georgia'],
+            'mono': ['ui-monospace', 'SFMono-Regular'],
+            'display': ['Oswald'],
+            'body': ['"Open Sans"'],
+            'montserrat':['Montserrat'],
+          },
+      }
+    }
+    </script>
     <title>Typography</title>
   </head>
   <body>
     <!-- Font Family -->
+    <h1 class="text-4xl text-blue-700">Font Family</h1>
+    <div class ="font-serif">I like Tailwind CSS!!</div>
+    <div class="font-sans">I like Tailwind CSS!!</div>
+    <div class="font-mono">I like Tailwind CSS!!</div>
+    <div class="font-montserrat">I like Tailwind CSS!!</div>
 
     <!-- Font Size -->
-
+    <h1 class="text-4xl text-orange-400 mt-8">Font Size</h1>
+    <p class="text-xs">Ab porro alias debitis in!</p>
+      <p class="text-sm">Lorem ipsum dolor sit amet.</p>
+      <p class="text-lg">Mollitia, odit! Quos, pariatur eos?</p>
+      <p class="text-base">Dignissimos dolor minus voluptates adipisci.</p>
+      <p class="text-xl">Quos architecto non vel dolorum?</p>
+      <p class="text-2xl">Iure quasi est voluptatum aut.</p>
+      <p class="text-3xl">Animi necessitatibus dolores quis id!</p>
+      <p class="text-[32px]">Eaque ab provident obcaecati minus.</p>
     <!-- Font Weight -->
+    <h1 class="text-4xl text-teal-800 mt-8">Font Weight</h1>
+    <p class="font-light">Lorem ipsum dolor sit amet.</p>
+    <p class="font-medium">Optio minima libero quis commodi!</p>
+    <p class="font-semibold">Doloremque officiis voluptatem repellendus consectetur.</p>
+    <p class="font-bold">Adipisci dolores error quasi quo.</p>
+    <p class="font-extrabold">Blanditiis quibusdam fuga perspiciatis iure.</p>
+    <p class="font-black">Qui eveniet culpa quis animi!</p>
+
 
     <!-- Letter Spacing -->
+    <h1 class="text-4xl text-purple-800 mt-8">Letter Spacing</h1>
+    <p class="tracking-tight">Lorem ipsum dolor sit amet.</p>
+    <p class="tracking-normal">Optio minima libero quis commodi!</p>
+    <p class="tracking-wide">Doloremque officiis voluptatem repellendus consectetur.</p>
 
     <!-- Text Alignment -->
+    <h1 class="text-4xl text-emerald-800 mt-8">Text-Alignment</h1>
+    <p class="text-left">Lorem ipsum dolor sit amet.</p>
+    <p class="text-center">Optio minima libero quis commodi!</p>
+    <p class="text-right">Doloremque officiis voluptatem repellendus consectetur.</p>
 
     <!-- Text Decoration -->
-
-    <!-- Decoration Style -->
-
-    <!-- Decoration Offset -->
-
+    <h1 class="text-4xl text-pink-800 mt-8">Letter Spacing</h1>
+    <p class="underline decoration-blue-900 decoration-4">Lorem ipsum dolor sit amet.</p>
+    <p class="underline decoration-dashed">Optio minima libero quis commodi!</p>
+    <p class="underline decoration-wavy">Doloremque officiis voluptatem repellendus consectetur.</p>
     <!-- Text Transform -->
   </body>
 </html>
