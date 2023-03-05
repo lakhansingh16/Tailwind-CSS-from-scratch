@@ -9,10 +9,46 @@
   </head>
   <body>
     <!-- Flex and alignment -->
+    <div class="flex">
+      <div class="bg-blue-500 text-white p-4 m-4">Item 1</div>
+      <div class="bg-blue-500 text-white p-4 m-4">Item 2</div>
+      <div class="bg-blue-500 text-white p-4 m-4">Item 3</div>
+      <div class="bg-blue-500 text-white p-4 m-4">Item 4</div>
+      <div class="bg-blue-500 text-white p-4 m-4">Item 5</div>
+    </div>
+
+    <div class="flex-col">
+      <div class="bg-blue-500 text-white p-4 m-4">Item 1</div>
+      <div class="bg-blue-500 text-white p-4 m-4">Item 2</div>
+      <div class="bg-blue-500 text-white p-4 m-4">Item 3</div>
+      <div class="bg-blue-500 text-white p-4 m-4">Item 4</div>
+      <div class="bg-blue-500 text-white p-4 m-4">Item 5</div>
+    </div>
+
+    <div class="flex flex-col md:flex-row items-center flex-wrap">
+      <div class="w-72 text-center bg-teal-500 border border-4 rounded rounded-12 border-green-700 text-white p-4 m-4">Item 1</div>
+      <div class="w-72 text-center bg-teal-500 border border-4 rounded rounded-12 border-green-700 text-white p-4 m-4">Item 2</div>
+      <div class="w-72 text-center bg-teal-500 border border-4 rounded rounded-12 border-green-700 text-white p-4 m-4">Item 3</div>
+      <div class="w-72 text-center bg-teal-500 border border-4 rounded rounded-12 border-green-700 text-white p-4 m-4">Item 4</div>
+      <div class="w-72 text-center bg-teal-500 border border-4 rounded rounded-12 border-green-700 text-white p-4 m-4">Item 5</div>
+    </div>
 
     <!-- Flex Column, Gap and Order -->
+    <div class="flex gap-4">
+      <div class="order-3 bg-blue-500 text-white p-4 m-4">Item 1</div>
+      <div class="order-4 bg-blue-500 text-white p-4 m-4">Item 2</div>
+      <div class="order-5 bg-blue-500 text-white p-4 m-4">Item 3</div>
+      <div class="order-1 bg-blue-500 text-white p-4 m-4">Item 4</div>
+      <div class="order-2 bg-blue-500 text-white p-4 m-4">Item 5</div>
+    </div>
 
     <!-- Grow and shrink -->
+    <div class="flex">
+      <div class="bg-emerald-500 flex-initial w-64 text-white p-4 m-4">Item 1</div>
+      <div class="bg-emerald-500 w-64 flex-none text-white p-4 m-4">Item 2</div>
+      <div class="bg-emerald-500 w-64 flex-auto text-white p-4 m-4">Item 3</div>
+      <div class="bg-emerald-500 w-64 text-white flex-1 p-4 m-4">Item 4</div>  
+    </div>
   </body>
 </html>
 
